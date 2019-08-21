@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/asset.css"/>
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="assetop">
+				<p class="title">总资产</p>
+				<p class="amout"><span class="amouthao">$</span>194631.00<span class="conet">USDT</span></p>
+				<p class="qrcodes">0xD464891CB...C6CACA156a2 <img src="../img/QRcode.png" ></p>
+			</div>
+			<ul>
+				<li v-for="(item,index) in 4" key='index'>
+					<div class="leftcon">
+						<img src="../img/ask.png" >
+						<span class="name">SPS</span>
+						<span class="limit">≈￥10000.00</span>
+					</div>
+					<div class="rightcon">
+						<p class="name">10000.00 USDT</p>
+						<p class="limit">≈￥10000.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

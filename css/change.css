@@ -1,0 +1,129 @@
+/* 头部start */
+.tophader {
+	position: relative;
+	padding: .25rem 0;
+}
+
+.tophader .left {
+	position: absolute;
+	left: .3rem;
+	width: .18rem;
+}
+
+.tophader p {
+	text-align: center;
+	font-size: .36rem;
+}
+
+.tophader img{
+	position: absolute;
+	right:.26rem;
+	top: .35rem;
+	width: .28rem;
+}
+.contenone{
+	margin: 0 .3rem;
+	padding: .55rem .43rem .55rem .33rem;
+	background: url(../img/background-blue.png);
+	background-size: 100% 100%;
+}
+.contenone img,.contentwo img{
+	width: .2rem;
+	display: inline-block;
+	position: relative;
+	left: .1rem;
+	top: .04rem;
+}
+.contenone li,.contentwo li{
+	display: flex;
+	justify-content: space-between;
+	font-size: .3rem;
+	line-height: .76rem;
+}
+.contentwo{
+	margin:.3rem;
+	padding: .55rem .43rem .55rem .33rem;
+	background: url(../img/background-bluexpng.png);
+	background-size: 100% 100%;
+	
+}
+.changeflayer{
+	margin: 0 .3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.changeflayer span:nth-of-type(1){
+	font-size: .3rem;
+}
+.changeflayer span:nth-of-type(2){
+	font-size: .2rem;
+}
+.progressbar{
+	margin: 0 .3rem;
+}
+.progressbar .comenb{
+	display: flex;
+	font-size: .2rem;
+	justify-content: space-between;
+	background: #013F40;
+	padding: .15rem .18rem;
+	margin-bottom: .1rem;
+	border-radius: 4px;
+}
+.comenb img{
+	width: .14rem;
+	display: inline-block;
+	position: relative;
+	left: 0.08rem;
+	top: .02rem;
+}
+.progressbar .boxone{
+	padding: .05rem 0;
+}
+.boxone{
+	position: relative;
+}
+.boxone p{
+	padding: .15rem .18rem;
+	position: absolute;
+	right: 0rem;
+	top: .08rem;
+}
+.boxone .residue{
+	background: #177678;
+	padding: 0.14rem .18rem;
+	border-radius: 4px;
+}
+.boxtwo{
+	width: 90%;
+}
+.boxthree{
+	width: 85%;
+}
+.boxfour{
+	width: 80%;
+}
+.boxfive{
+	width: 75%;
+}
+.boxsix{
+	width: 70%;
+}
+.boxsive{
+	width: 65%;
+}
+.subratio{
+	font-size: .3rem;
+	margin-left: .3rem;
+}
+.changebton{
+	width: 6.9rem;
+	background: #013F40;
+	height: 1rem;
+	margin: .49rem .3rem;
+	text-align: center;
+	color: #DCCE27;
+	border-radius: 10px;
+	font-size: .3rem;
+	}
+/* 头部end */

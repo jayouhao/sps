@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/safetycenters%20.css" />
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" onclick="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+			</div>
+			<p class="settitle">安全中心</p>
+			<div class="divli" onclick="window.location.href='changepass.html'">
+				<p><img src="../img/dashed@2x.png" class="frontimg"><span class="onespan">修改密码</span></p>
+				<p><img class="jtou" src="../img/jtou@2x.png" ></p>
+			</div>
+			<p class="hr"></p> 
+			<div class="divli" onclick="window.location.href='changephone.html'">
+				<p><img src="../img/sets@2x.png" class="frontimg"><span class="onespan">修改手机</span></p>
+				<p><img class="jtou" src="../img/jtou@2x.png" ></p>
+			</div>
+			<p class="hr"></p> 
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

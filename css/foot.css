@@ -1,0 +1,31 @@
+.bottombox{
+	width: 76%;
+	height: 2.4rem;
+	margin: auto;
+	background: url(../img/homebottomx.png) no-repeat;
+	background-size: 100%;
+	font-size: .24rem;
+	padding: .42rem .42rem .8rem;
+	font-family: PingFang-SC-Regular;
+}
+.allfoot{
+    padding: .15rem 4% .15rem;    
+    font-size: .24rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 92%;
+    background: #013F40;
+}
+.allfoot p{
+	color: #999999;
+	text-align: center;
+}
+.allfoot img{
+	width: .38rem;
+	height: .36rem;
+	margin: auto;
+}

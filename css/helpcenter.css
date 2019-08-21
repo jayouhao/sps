@@ -1,0 +1,60 @@
+.tophader {
+	position: relative;
+	padding: .25rem 0;
+}
+
+.tophader img {
+	position: absolute;
+	left: .3rem;
+	width: .18rem;
+}
+.settitle{
+	font-size: .46rem;
+	padding: .5rem .3rem 0rem;
+}
+ol{
+	padding: .3rem;
+}
+li{
+	border-bottom: 1px solid #013F40;
+	padding-top: .2rem;
+	position: relative;
+}
+.issue{
+	font-size: .26rem;
+	position: absolute;
+	top: .28rem;
+}
+.answer{
+	font-size: .24rem;
+	padding-bottom: .2rem;
+}
+.open{
+	width: .26rem;
+	height: .15rem;
+	margin-top: .1rem;
+	position: absolute;
+	right: 0;
+	top: .3rem;
+}
+.sariol{
+    width: .37rem;
+    background: url(../img/xhao.png) no-repeat;
+    background-size: 100%;
+	margin-top: 0.05rem;
+}
+.sariol span{
+color: #333333;
+    font-weight: 550;
+    font-family: PingFang SC;
+    font-size: .26rem;
+    text-align: center;
+    display: block;
+}
+.con{
+	  margin-left: .5rem;
+	  margin-top: .3rem;
+}
+.con .answer{
+	margin-top: .2rem;
+}

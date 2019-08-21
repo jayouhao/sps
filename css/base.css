@@ -1,0 +1,61 @@
+html, body, div, span, applet,object,iframe,h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, 
+var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, 
+legend, table, caption, tbody, tfoot, thead, tr, th, td,header,input,figure{
+margin: 0; padding: 0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;cursor: pointer;color: #555756;}
+html{-ms-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;}
+body{line-height:1.5; font-size:14px;}
+body,button,input,select,textarea{font-family:'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;}
+b,strong{font-weight:bold;}
+i,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+table th{font-weight:inherit;border-bottom-width:2px;border-bottom-color:#ccc;}
+img{display:block;max-width: 100%; height: auto; width: auto\9; /* ie9以下 */}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;vertical-align:baseline;}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
+button[disabled],input[disabled]{cursor:default;}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
+input:focus{outline:none;}
+select[size],select[multiple],select[size][multiple]{border:1px solid #AAA;padding:0;}
+audio,canvas,video,progress{display:inline-block;}
+body{background:#fff;}
+input::-webkit-input-speech-button {display: none}
+button,input,textarea{
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*多媒体自适应*/
+.video embed, .video object, .video iframe { width: 100%; height: auto; }
+/* 公共库 */
+li { list-style: none; }
+a:hover {text-decoration: none; }
+a img { border: none; }
+a > img { vertical-align: bottom; }
+
+/*去掉 input 默认边框*/
+input,button{outline:none;border:0;}
+
+/*img { -webkit-touch-callout: none;}*/
+/*html5手机页面如何禁止长按保存图片？*/
+/*img { pointer-events: none; }*/
+
+
+
+/* 自行添加css */
+div{
+	color: #F9E92A;
+}
+html,body{
+	background: black;
+}
+a {
+    background: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;  
+}
+/* 自行添加end */

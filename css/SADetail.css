@@ -1,0 +1,29 @@
+.tophader {
+	position: relative;
+	padding: .25rem 0;
+}
+
+.tophader img {
+	position: absolute;
+	left: .3rem;
+	width: .18rem;
+}
+.settitle{
+	font-size: .46rem;
+	padding: .5rem .3rem 0rem;
+}
+
+.main{
+	font-size: .24rem;
+	width:98%;
+	margin:.2rem auto;
+	color: #F9F3A9;
+}
+.main p{
+	padding: .3rem;
+	line-height: .4rem;
+}
+.mainclud{
+	font-size: .3rem;
+	margin: .4rem 0 .2rem .3rem;
+}

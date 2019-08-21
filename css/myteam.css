@@ -1,0 +1,74 @@
+.topbackground{
+	height: 2.8rem;
+	background: url(../img/teamimgx.png);
+	background-size: 100% 100%;
+}
+.tophader {
+	position: relative;
+	padding: .25rem 0;
+}
+
+.tophader img {
+	position: absolute;
+	left: .3rem;
+	width: .18rem;
+}
+
+.settitle {
+	font-size: .46rem;
+	padding: .5rem .3rem 0rem;
+	text-align: left;
+}
+.navul{
+	display: flex;
+	justify-content: space-between;
+	padding: .29rem;
+}
+.navul li{
+	width: 2.27rem;
+	height: 1.17rem;
+	background: #013F40;
+	border-radius:6px 0px 6px 0px;
+	font-size: .24rem;
+	text-align: center;
+}
+.navul li:nth-of-type(1){
+	border-bottom: 1px solid #3CA3BF;
+}
+.navul li:nth-of-type(2){
+	border-bottom: 1px solid #4ABC8F;
+}
+.navul li:nth-of-type(3){
+	border-bottom: 1px solid #BCD16F;
+}
+.navul li img{
+	width: .17rem;
+	display: inline-block;
+}
+.tablediv{
+	font-size: .24rem;
+	margin-top: 0.5rem;
+}
+.tableul{
+	background: #013F40;
+	padding: .1rem .29rem;
+	display: flex;
+	justify-content: space-between;
+}
+.massegeul li{
+	height: .6rem;
+	width: 92%;
+	margin: auto;
+	line-height: .6rem;
+	border-bottom: 1px solid #013F40;
+	position: relative;
+}
+.massegeul li span{
+	position: absolute;
+}
+.massegeul li .numberphone{
+	left: 38%;
+}
+.massegeul li .amot{
+	right: 0;
+}

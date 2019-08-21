@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />		
+		<link rel="stylesheet" type="text/css" href="../css/foot.css" />
+		<link rel="stylesheet" type="text/css" href="../css/zoology.css" />
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>
+		<script src="../js/vue.min.js"></script>		
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+
+			<div class="top">
+				<p>生态</p>
+			</div>
+
+			<ul>
+				<li onclick="window.location.href='change.html'">
+					<img src="../img/zoolo1.png">
+					<div>
+						<p class="title">公链击变</p>
+						<p>维持产币与价值的平衡体系</p>
+					</div>
+				</li>
+				<li>
+					<img src="../img/zoolo2.png">
+					<div>
+						<p class="title">跨链资产管理</p>
+						<p>维持产币与价值的平衡体系</p>
+					</div>
+				</li>
+				<li onclick="window.location.href='turn.html'">
+					<img src="../img/zoolo3.png">
+					<div>
+						<p class="title">创世码贡献码（Spsseed）</p>
+						<p>撒旦法是的弗兰克就如风手机壳理发店时代金坷垃</p>
+					</div>
+				</li>
+				<li onclick="window.location.href='broadcast.html'">
+					<img src="../img/zoolo4.png">
+					<div>
+						<p class="title">链广播</p>
+						<p>维持产币与价值的平衡体系</p>
+					</div>
+				</li>
+			</ul>
+
+			<img src="../img/zoolofootimg.gif" class="footimg" >
+
+			<div class="allfoot">
+				<div @click="window.location.href='index.html'">
+					<p><img src="../img/icon_shouye@2x.png"></p>
+					<p>首页</p>
+				</div>
+				<div>
+					<p><img src="../img/icon_Selected_shengtai@2x.png"></p>
+					<p style="color: #15F1FD;">生态</p>
+				</div>
+				<div @click="window.location.href='my.html'">
+					<p><img src="../img/icon_wode@2x.png"></p>
+					<p>我的</p>
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

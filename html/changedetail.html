@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/vantindex.css" />
+		<link rel="stylesheet" type="text/css" href="../css/changedetail.css" />
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>
+		<script src="../js/vue.min.js"></script>
+		<script src="../js/vant.min.js"></script>
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" onclick="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+			</div>
+			<p class="settitle">公链击变</p>
+			<div class="contenone">
+				<p class="ratiotitle">当前击变比例</p>
+				<p class="ratio">
+					<span>2014.991262 <img src="../img/comis.png"></span>
+					:
+					<span>2014.991262 <img src="../img/comis.png"></span>
+				</p>
+			</div>
+			<div class="creditbox">
+				<p>ETH</p>
+				<p>可用余额：0 <img src="../img/comis.png"></p>
+			</div>
+			<div class="strikenumber">
+				<input type="" name="" id="" value="" / placeholder="请输入您想击变的数量">
+				<img src="../img/comis.png">
+			</div>
+			<p class="explain">对撞规则:对撞依据为交易产生的交易ID的最后一位数字，左域为1,3,5,7,9,右域为0，2，4,6,8,对撞前选择区域，对撞结果根据链上随机产生的交易ID进行判定，交易ID最后一位数字处于所选区域，则判定赢，反之则输。对撞结果为赢，则获得的CXC110%，
+				结果为输，根据赛季的不同，将会有不同程度的对撞损失，当前对撞失败后返还比例为1.200%，对撞回流比例为7.800%，对撞销毁比例为1.00%，对撞所得CXC将于5.0h后到账，若层级变更频繁，对撞所得以最终结果为准! </p>
+			<div class="conarea">
+				<div class="left">
+					<p>左域</p>
+					<p class="whitetext">1,3,5,7,9</p>
+				</div>
+				<div class="right">
+					<p>右域</p>
+					<p class="whitetext">1,3,5,7,9</p>
+				</div>
+			</div>
+			<p class="charge">
+				<span>手续费：0001 <img src="../img/comis.png"></span>
+				<span>需要支付：0 <img src="../img/comis.png"></span>
+			</p>
+			<button type="button" class="changebton" @click="changes1(1)">进行击变</button>
+			<div class="popverbox" v-show="alertis">
+				<p class="title">击变成功</p>
+				<p class="paragraph"> 您好，您进行击变的哈希值为： 1FBE8359E4775CC58AF909DC5033903E 尾数为3 </p>
+				<hr>
+				<button class="ensure" @click="changes(0)">确定</button>
+			</div>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function() {
+					return {
+						alertis: false
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+					changes: function(e) {
+						var ts = this;
+						if (e == 1) {
+							ts.alertis = true;
+						}else{
+							ts.alertis = false;
+						}
+						console.log(1)
+					},
+					changes1:function(){
+						vant.Dialog.alert({
+						  title: '击变成功',
+						  message: '您好，您进行击变的哈希值为： 1FBE8359E4775CC58AF909DC5033903E 尾数为3'
+						}).then(() => {
+						  // on close
+						});
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

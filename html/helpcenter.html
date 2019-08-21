@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/helpcenter.css"/>
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" @click="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+			</div>
+			<p class="settitle">帮助中心</p>
+			<ol>
+				<li v-for="(item,index) in 8" @click="djan(index)">
+					<p class="sariol"><span>{{index+1}}</span></p>
+					<div class="con">
+						<p class="issue">什么什么是一家什么平台？</p>
+						<p class="answer" :ref="'dom'+index" style="display:none"> 什么什么什么什么什么什么什么什么事没事没理财，是互联 网金融行什么什么什么事没什么台。 </p>
+					</div>
+					
+					<img :src="imgurl[0]" :ref="'img'+index" alt="" class="open"/>
+				</li>
+			</ol>
+		</div>
+
+
+		<script> 
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+						imgurl:[
+							"../img/downimg.png",
+							"../img/upimg.png"
+						]
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+					djan:function(i){							
+						var str="this.$refs.dom"+i;
+						var strimg="this.$refs.img"+i;
+						var dom=eval(str);	
+						var img=eval(strimg);						
+						if(dom[0].style.display=='none'){
+							dom[0].style.display='block';
+							img[0].src=this.imgurl[1];
+						}else{
+							dom[0].style.display='none';
+							img[0].src=this.imgurl[0];
+						}						
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

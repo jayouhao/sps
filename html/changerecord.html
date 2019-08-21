@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" href="../css/changerecord.css">
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" @click="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+			</div>
+			<p class="settitle">击变记录</p>
+			<ul>
+				<li v-for="(i,index) in 3">
+					<div class="left">
+						<p>击变产出</p>
+						<p>2019-02-08 10:58:18</p>
+					</div>
+					<p class="right">+18.00SPS</p>
+				</li>
+			</ul>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

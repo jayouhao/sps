@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />		
+		<link rel="stylesheet" type="text/css" href="../css/foot.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my.css" />
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>
+		<script src="../js/vue.min.js"></script>		
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="alltop">
+				<div class="top">
+					<p>我的s</p>
+				</div>
+				<p class="headerimg"><img src="../img/headerimg.png"></p>				
+				<div class="topcne">
+					<p class="topname">a134567</p>
+					<div class="twocode">
+						<div class="cen left">
+							<img src="../img/identitys2x.png" >
+							<div>
+								<p>身份地址</p>
+								<p>sdf345**sdfbg</p>
+								<span class="rigthline"></span>
+							</div>							
+						</div>
+						<div class="cen rig">
+							<img src="../img/codeimg2x.png" >
+							<div>
+								<p>二维码名片</p>
+								<p>查看我的二维码</p>								
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<ul>
+				<li @click="window.location.href='settings.html'">
+					<img src="../img/icon_01.png" alt="" class="nameimg">
+					<p>设置</p>
+				</li>
+				<li @click="window.location.href='asset.html'">
+					<img src="../img/icon_02.png" alt="" class="nameimg">
+					<p>资产信息</p>
+				</li>
+				<li @click="window.location.href='safetycenters.html'">
+					<img src="../img/icon_03.png" alt="" class="nameimg">
+					<p>安全中心</p>
+				</li>
+				<li @click="window.location.href='helpcenter.html'">
+					<img src="../img/icon_06.png" alt="" class="nameimg">
+					<p>帮助中心</p>
+				</li>
+				<li>
+					<img src="../img/icon_05.png" alt="" class="nameimg">
+					<p>我的分享</p>
+				</li>
+				<li @click="window.location.href='myteam.html'">
+					<img src="../img/icon_04.png" alt="" class="nameimg">
+					<p>我的团队</p>
+				</li>
+				<li  @click="window.location.href='callcenter.html'">
+					<img src="../img/icon_07.png" alt="" class="nameimg">
+					<p>客服中心</p>
+				</li>
+			</ul>
+
+
+
+			<div class="allfoot">
+				<div @click="window.location.href='index.html'">
+					<p><img src="../img/icon_shouye@2x.png"></p>
+					<p>首页</p>
+				</div>
+				<div @click="window.location.href='zoology.html'">
+					<p><img src="../img/icon_shengtai@2x.png"></p>
+					<p>生态</p>
+				</div>
+				<div>
+					<p><img src="../img/icon_Selected_wode@2x.png"></p>
+					<p style="color: #15F1FD;">我的</p>
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

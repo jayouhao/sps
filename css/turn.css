@@ -1,0 +1,98 @@
+/* 头部start */
+.tophader {
+	position: relative;
+	padding: .25rem 0;
+}
+
+.tophader img {
+	position: absolute;
+	left: .3rem;
+	width: .18rem;
+}
+
+.tophader p {
+	text-align: center;
+	font-size: .36rem;
+}
+
+/* 头部end */
+
+.topcen {
+	background: url(../img/turntopimg.png) no-repeat;
+	background-size: 100% 100%;
+	padding: .6rem 0 .5rem;
+}
+
+.topcen .name {
+	padding: 0 .3rem;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: .3rem;
+}
+
+.topcen .name p {
+	font-size: .28rem;
+}
+
+.topcen .name img {
+	width: .3rem;
+	height: .3rem;
+	margin-left: .1rem;
+	display: inline-block;
+	position: relative;
+	top: .045rem;
+}
+
+.topcen .money {
+	padding-left: .6rem;
+	font-size: .6rem;
+	margin-bottom: .5rem;
+}
+
+.buttoncli {
+	padding: 0 .6rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttoncli p {
+	font-size: .3rem;
+	background: url(../img/trunback.png) no-repeat;
+	background-size: 100%;
+	width: 2.7rem;
+	height: .7rem;
+	text-align: center;
+	line-height: .7rem;
+}
+
+.trunlist {
+	background: url(../img/trunlist.png) no-repeat;
+	background-size: 100%;
+	width: 94%;
+	height: 7rem;
+	margin: .14rem auto;
+	padding: .7rem 0;
+	overflow-y: auto;
+}
+
+.trunlist li {
+	padding: .24rem 0 .23rem;
+	width: 92%;
+	margin: auto;
+	border-bottom: 1px solid #275C5C;
+	display: flex;
+	justify-content: space-between;
+}
+
+.trunlist .name {
+	font-size: .26rem;
+}
+
+.trunlist .time {
+	font-size: .2rem;
+}
+
+.trunlist .right {
+	font-size: .3rem;
+	line-height: .7rem;
+}

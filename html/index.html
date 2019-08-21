@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/vantindex.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/foot.css"/>
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>
+		<script src="../js/vue.min.js"></script>
+		<script src="../js/vant.min.js"></script>
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">			
+			<div class="top">
+				<img src="../img/icon_erweima.png" class="left">
+				<p>A23423</p>
+				<img src="../img/icon_gengduo.png" class="right">
+			</div>
+			<van-swipe :autoplay="3000" indicator-color="white" class="topcen">
+				<van-swipe-item>
+					<img src="../img/hometopbac.png">
+				</van-swipe-item>
+				<van-swipe-item>2</van-swipe-item>
+			</van-swipe>
+
+			<div class="midimg">
+				<p>可用余额</p>
+				<p>1000.0</p>
+				<img src="../img/midrig.png">
+			</div>
+
+			<img src="../img/hllmenex2@2x.png" class="nextimg">
+
+			<div class="bottombox">
+				科技峰会，将携各智能领域的多位高手及业界专家，为大家揭秘人工智能背后的技术探索及进展。活动将就自然语言、图像、语音、深度学习等
+			</div>
+
+			<div class="allfoot">
+				<div>
+					<p><img src="../img/icon_Selected_shouye@2x.png"></p>
+					<p style="color: #15F1FD;">首页</p>
+				</div>
+				<div @click="window.location.href='zoology.html'">
+					<p><img src="../img/icon_shengtai@2x.png"></p>
+					<p>生态</p>
+				</div>
+				<div @click="window.location.href='my.html'">
+					<p><img src="../img/icon_wode@2x.png"></p>
+					<p>我的</p>
+				</div>
+			</div>
+		</div>
+
+
+		<script>			
+			var app = new Vue({
+				el: '#app',
+				data: {
+					msg:"第三方"
+				},
+				created: function() {	
+					console.log(axios)				
+					var ts = this;					
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

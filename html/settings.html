@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/settins.css" />
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" onclick="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+			</div>
+			<p class="settitle">设置</p>
+			<div class="divli" onclick="window.location.href='currency.html'">
+				<p><img src="../img/dashed@2x.png" class="frontimg"><span class="onespan">对标货币</span></p>
+				<p><span class="spant">USD</span> <img class="jtou" src="../img/jtou@2x.png" ></p>
+			</div>
+			<p class="hr"></p> 
+			<div class="divli" onclick="window.location.href='englishset.html'">
+				<p><img src="../img/sets@2x.png" class="frontimg"><span class="onespan">语言设置</span></p>
+				<p><span class="spant">简体中文</span> <img class="jtou" src="../img/jtou@2x.png" ></p>
+			</div>
+			<p class="hr"></p> 
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

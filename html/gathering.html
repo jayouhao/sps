@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" href="../css/gathering.css">
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" @click="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+			</div>
+			<p class="settitle">收款</p>
+			<p class="tish"> 如需充提BTC/ETH，请至“生态”->“跨链资产管理”Dapp中进 行提操作 </p>
+			<div class="choicecry">
+				<span>SPS</span>
+				<span>选择币种 <img src="../img/jtou@2x.png" alt=""></span>
+			</div>
+			<!-- 二维码 -->
+			<p class="gvid">acfahoi6t8yegahx4b4vwV3Li4aXgviD</p>
+			<ul>
+				<li>复制</li>
+				<li>保存至本地</li>
+				<li>设置金额</li>
+			</ul>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

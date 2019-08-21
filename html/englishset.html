@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/englishset.css" />
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" onclick="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+			</div>
+			<p class="settitle">语言设置</p>
+			<div class="divli">
+				<p><span class="onespan">简体中文</span></p>
+				<p><img class="jtou" :src="sel==0?img[1]:img[0]" ></p>
+				<input type="radio" v-model="sel" value="0" name="lang">
+			</div>
+			<p class="hr"></p> 
+			<div class="divli">
+				<p><span class="onespan">English</span></p>
+				<p><img class="jtou" :src="sel==1?img[1]:img[0]" ></p>
+				<input type="radio" v-model="sel" value="1" name="lang">
+			</div>
+			<p class="hr"></p> 
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+						sel:0,			
+						img:[
+							"../img/smal.png",
+							"../img/dgou.png"
+						]
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {			
+				},
+				watch:{
+					sel(s){
+						console.log(s,' kk')					
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

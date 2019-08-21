@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/change.css"/>
+
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" onclick="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+				<p>公链击变</p>	
+				<img src="../img/naving.png" >
+			</div>
+			<div class="contenone">
+				<ul>
+					<li v-for="(item,index) in listone" key='inedex'>
+						<p>{{item.a}}</p>
+						<p>{{item.b}}<img src="../img/comis.png" ></p>
+					</li>
+				</ul>
+			</div>
+			<div class="contentwo">
+				<ul>
+					<li v-for="(item,index) in listwo" key='inedex'>
+						<p>{{item.a}}</p>
+						<p>{{item.b}}<img src="../img/comis.png" ></p>
+					</li>
+				</ul>
+			</div>
+			<p class="changeflayer">
+				<span>1.3112</span>
+				<span>击变第一层</span>
+			</p>
+			<div class="progressbar">
+				<div class="boxone comenb">
+					<div v-bind:style="{width:health+'%'}" class="residue">剩余约：{{health+'%'}}
+						<p>88888.03136<img src="../img/comis.png" ></p>
+					</div>
+					
+				</div>
+				<div class="boxtwo comenb">
+					<p>1：3094</p>
+					<p>88888.03136<img src="../img/comis.png" ></p>
+				</div>
+				<div class="boxthree comenb">
+					<p>1：3094</p>
+					<p>88888.03136<img src="../img/comis.png" ></p>
+				</div>
+				<div class="boxfour comenb">
+					<p>1：3094</p>
+					<p>88888.03136<img src="../img/comis.png" ></p>
+				</div>
+				<div class="boxfive comenb">
+					<p>1：3094</p>
+					<p>88888.03136<img src="../img/comis.png" ></p>
+				</div>
+				<div class="boxsix comenb">
+					
+				</div>
+				<div class="boxsive comenb">
+					
+				</div>
+			</div>
+			<p class="subratio">兑换比例(ETH/SPS)</p>
+			<button type="button" class="changebton">立即击变</button>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					health:73,
+					listone:[
+						{
+						a:'积累击变数量',
+						b:2014.991262
+						},
+						{
+						a:'当前赛季击变数量',
+						b:'68.991262'
+						}
+					],
+					listwo:[
+						{
+							a:'本层ETH可击变总量',
+							b:'68.991262'
+						},
+						{
+							a:'本层ETH剩余',
+							b:'6768.991262'
+						},
+						{
+							a:'击变池剩余SPS数量',
+							b:'2342368.991262'
+						},
+						{
+							a:'可用余额',
+							b:'43268.991262'
+						},
+						{
+							a:'击变可获得',
+							b:'268.991262'
+						},
+						{
+							a:'已销毁总量',
+							b:'4368.991262'
+						},
+						{
+							a:'当前击变总产出',
+							b:'468.991262'
+						},
+						{
+							a:'奖池',
+							b:'368.991262'
+						},
+						{
+							a:'黑洞等量',
+							b:'682.991262'
+						}
+						
+					]
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

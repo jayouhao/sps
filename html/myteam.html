@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/myteam.css"/>
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="topbackground">
+				<div class="tophader" onclick="window.history.go(-1)">
+					<img src="../img/backimg.png" class="left">
+				</div>
+				<p class="settitle">我的团队</p>
+				<ul class="navul">
+					<li>
+						<img src="../img/trogon.png" >
+						<p>1000000</p>
+						<p>直推人数</p>
+					</li>
+					<li>
+						<img src="../img/trogon.png" >
+						<p>1000000</p>
+						<p>团队人数</p>
+					</li>
+					<li>
+						<img src="../img/trogon.png" >
+						<p>1000000</p>
+						<p>总持币数</p>
+					</li>
+				</ul>
+			</div>
+			<div class="tablediv">
+				<ul class="tableul">
+					<li class="designation">姓名</li>
+					<li class="designation">电话</li>
+					<li class="designation">持币量</li>
+				</ul>
+				<ul class="massegeul">
+					<li v-for="(i,index) in 6" key='index'>
+						<span class="name">王嬷嬷</span>
+						<span class="numberphone">12342342312</span>
+						<span class="amot">100000.00SPS</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+.top{
+	padding: .23rem .3rem;	
+}
+.top p{
+	font-size: .36rem;
+	text-align: center;
+}
+li{
+	background: #013F40;
+	margin-bottom: 2px;
+	display: flex;
+	padding: .22rem .3rem;
+}
+li img{
+	width: 1.12rem;
+	height: 1.12rem;
+	margin-right: .17rem;	
+}
+li p{
+	font-size: .24rem;
+	margin-top: .1rem;
+	color: #FFF689;
+}
+li .title{
+	font-size: .3rem;
+	color: #F9E92A;	
+}
+
+.footimg{
+	width: 90%;
+	display: block;
+	margin: .5rem auto;
+}

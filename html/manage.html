@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/vantindex.css" />
+		<link rel="stylesheet" href="../css/manage.css">
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<script src="../js/vant.min.js"></script>
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" @click="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+			</div>
+			<p class="settitle">管理</p>
+			<div class="conbox" @click="revsioname(this)">
+				<p>A132465 <img src="../img/comis.png" alt=""></p>
+				<p>acfahoi6t8yegahx4b4vwV3Li4aXgviD</p>
+			</div>
+			<div class="divli" onclick="window.location.href='changepass.html'">
+				<p><img src="../img/dashed@2x.png" class="frontimg"><span class="onespan">收款码</span></p>
+				<p><img class="jtou" src="../img/jtou@2x.png" ></p>
+			</div>
+			<p class="hr"></p> 
+			<div class="divli" onclick="window.location.href='changephone.html'">
+				<p><img src="../img/sets@2x.png" class="frontimg"><span class="onespan">复制地址</span></p>
+				<p><img class="jtou" src="../img/jtou@2x.png" ></p>
+			</div>
+			<p class="hr"></p> 
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+					revsioname:function(){
+						vant.Dialog.confirm({
+						  title: '修改账户名称',
+						  message: 'a12346'
+						}).then(() => {
+						  // on confirm
+						}).catch(() => {
+						  // on cancel
+						});
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

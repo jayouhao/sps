@@ -1,0 +1,46 @@
+.tophader {
+	position: relative;
+	padding: .25rem 0;
+}
+
+.tophader img {
+	position: absolute;
+	left: .3rem;
+	width: .18rem;
+}
+.settitle{
+	font-size: .46rem;
+	padding: .5rem .3rem 0rem;
+}
+ul{
+	padding-left: .3rem;
+}
+li{
+	font-size: .3rem;
+	text-align: left;
+}
+li p{
+	margin: .2rem 0;
+}
+li input{
+	background: none;
+	color: white;
+}
+.hr{
+	height: .02rem;
+	background:rgba(83,83,83,1);
+}
+li span{
+	position: absolute;
+	    right: .3rem;
+}
+.changebton{
+	width: 6.9rem;
+	background: #013F40;
+	height: 1rem;
+	margin: .49rem .3rem;
+	text-align: center;
+	color: #DCCE27;
+	border-radius: 10px;
+	font-size: .3rem;
+	}

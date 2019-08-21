@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/turn.css"/>
+
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" onclick="window.history.go(-1)">
+				<img src="../img/blueleftback.png" >
+				<p>创世码转让</p>
+			</div>
+			<div class="topcen">
+				<div class="name">
+					<p>创世贡献码（Spsseed）</p>
+					<p>介绍<img src="../img/ask.png" ></p>
+				</div>
+				<p class="money">spsseed 6,888.66</p>
+				<div class="buttoncli">
+					<p>转让</p>
+					<p>出售</p>
+				</div>
+			</div>
+			
+			<ul class="trunlist">
+				<li v-for="(item,index) in 10" :key="index">
+					<div>
+						<p class="name">击变产出</p>
+						<p class="time">2019-02-08 10:58:18</p>
+					</div>
+					<div class="right">+18.00SPS</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>

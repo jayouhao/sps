@@ -1,0 +1,73 @@
+.assetop{
+	height: 4.31rem;
+	background: url(../img/topbackimg-2.png);
+	background-size: 100%;
+	text-align: center;
+}
+.title{
+	font-size: .36rem;
+	padding: .9rem 0 0rem;
+}
+.amout{
+	font-size: .72rem;
+}
+.amout .conet{
+	font-size: .36rem;
+	position: relative;
+	left: .2rem;
+}
+.amout .amouthao{
+	font-size: .72rem;
+	position: relative;
+	bottom: .05rem;
+	right: .1rem;
+}
+.qrcodes{
+	font-size: .24rem;
+	margin-top: .2rem;
+    margin-right: .5rem;
+}
+.qrcodes img{
+	width: .26rem;
+	display: inline-block;
+	position: relative;
+	left: .2rem;
+	top: .04rem;
+}
+ul{
+	padding: .3rem .25rem;
+}
+li{
+	background: url(../img/late.png);
+	background-size: 100%;
+	height: 1.84rem;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: .2rem;
+}
+li .leftcon{
+	position: relative;
+}
+li span{
+	position: absolute;
+}
+li .name{
+	font-size: .3rem;
+	left: 1.4rem;
+	top: 0.5rem;
+}
+li .limit{
+	font-size: .24rem;
+	left: 1.4rem;
+	top: 0.9rem;
+}
+.leftcon img{
+	width: .8rem;
+	height: .8rem;
+	border-radius: 50%;
+	margin: .51rem .43rem;
+}
+.rightcon{
+	text-align: right;
+	padding: .45rem;
+}

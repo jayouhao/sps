@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../css/vantindex.css" /> -->
+		<link rel="stylesheet" href="../css/introduce.css">
+
+		<script src="../js/flexible.min.js"></script>
+		<script src="../js/axios.min.js"></script>		
+		<script src="../js/vue.min.js"></script>
+		<!-- <script src="../js/vant.min.js"></script> -->
+		<script src="../js/url.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="tophader" @click="window.history.go(-1)">
+				<img src="../img/backimg.png" class="left">
+			</div>
+			<p class="settitle">介绍</p>
+			<div class="main">
+				<p>CXC华人社区是由亚洲极客团体开发，为亚洲精英社群打造的开放式营销平台，同时也是全球华人世界CXC玩家的互动阵地。</p>
+				<p>大家可在社区内获得最新的项目情报、交流推广心得与共识信仰。</p>
+				<p>通过[CID竞价) 能以低于官方APP百倍的价格实现推广! </p>
+				<p>通过[推广神器]可一键合成您的专属邀请码美图，推广成功率提升300% ! </p>
+				<p>通过[资料库]可获得最新最全最酷的视频图文宣传文档! </p>
+				<p>社区未来还将不断推出全球DAPP排行、开发者讨论、共建投票等重磅板块。</p>
+				<p> CXC华人社区将大幅推进CXC公链的共建进程，实现各位的人格自由与财务自由理想! </p>
+			</div>
+		</div>
+
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: function(){
+					return{
+
+					}
+				},
+				created: function() {
+					var ts = this;
+				},
+				methods: {
+
+				}
+			})
+		</script>
+	</body>
+</html>
